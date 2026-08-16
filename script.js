@@ -12,6 +12,7 @@ const CHANNELS = {
   x: "https://x.com/YOUR_CHANNEL",
   contact: "mailto:atherianmusic@gmail.com",
   concept47: "https://concept47.store/?sca_ref=11908093.yRMr5Heufwwvy",
+  freeDownload: "https://hypeddit.com/atherian/beautifulschranz",
   spotify: "https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ",
   appleMusic: "https://music.apple.com/us/artist/atherian/1890317132",
   tiktok: "https://www.tiktok.com/@atherianmusic",

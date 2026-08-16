@@ -16,6 +16,7 @@ The available entries are:
 - `x`
 - `contact` — keep the `mailto:` prefix for an email address
 - `concept47` — your unique Concept 47 affiliate URL; preserve the complete `sca_ref` value
+- `freeDownload` — the Hypeddit destination for the featured free download
 - `spotify`
 - `appleMusic`
 - `tiktok`
