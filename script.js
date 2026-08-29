@@ -5,7 +5,7 @@
 const CHANNELS = {
   music: "https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ",
   afterglow: "https://open.spotify.com/track/67jGUKiPR61DZuHfv9kiOl",
-  youtube: "https://youtube.com/@YOUR_CHANNEL",
+  youtube: "https://www.youtube.com/@Atherianmusic",
   twitch: "https://www.twitch.tv/atherianmusic",
   soundcloud: "https://www.soundcloud.com/atherianmusicofc",
   instagram: "https://www.instagram.com/atherianmusic/",
