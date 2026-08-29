@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&display=swap");
+
 :root {
   --ink: #090a08;
   --ink-soft: #0f100d;
@@ -9,6 +11,7 @@
   --pad: clamp(1.25rem, 4vw, 4.5rem);
   --mono: "SFMono-Regular", "Roboto Mono", "Cascadia Mono", "Liberation Mono", monospace;
   --display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --title: "Chakra Petch", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -616,11 +619,11 @@ a {
 
 .player-identity h3 {
   margin: 0;
-  font-family: var(--display);
+  font-family: var(--title);
   font-size: clamp(3.2rem, 11vw, 10rem);
-  font-weight: 900;
-  letter-spacing: -0.075em;
-  line-height: 0.72;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.82;
 }
 
 .spotify-embed {
@@ -946,11 +949,11 @@ a {
 
 .section-heading h2 {
   margin: 0;
-  font-family: var(--display);
+  font-family: var(--title);
   font-size: clamp(3.2rem, 10vw, 9rem);
-  font-weight: 900;
-  letter-spacing: -0.075em;
-  line-height: 0.72;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.82;
 }
 
 .section-heading > p:last-child {
