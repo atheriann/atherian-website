@@ -9,7 +9,7 @@ const CHANNELS = {
   twitch: "https://www.twitch.tv/atherianmusic",
   soundcloud: "https://www.soundcloud.com/atherianmusicofc",
   instagram: "https://www.instagram.com/atherianmusic/",
-  x: "https://x.com/YOUR_CHANNEL",
+  x: "https://x.com/atherianofc",
   contact: "mailto:atherianmusic@gmail.com",
   concept47: "https://concept47.store/?sca_ref=11908093.yRMr5Heufwwvy",
   freeDownload: "https://hypeddit.com/atherian/beautifulschranz",

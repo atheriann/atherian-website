@@ -546,6 +546,7 @@ a {
   animation: nudge 1.7s ease-in-out infinite;
 }
 
+.artist-intro,
 .transmission,
 .network,
 .partner,
@@ -553,6 +554,64 @@ a {
   position: relative;
   padding: clamp(5rem, 10vw, 9rem) calc(var(--pad) + 1.25rem);
   border-top: 1px solid var(--line);
+}
+
+.artist-intro {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.55fr) minmax(0, 2fr) auto;
+  align-items: end;
+  gap: clamp(2rem, 5vw, 6rem);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+  overflow: hidden;
+}
+
+.artist-intro::after {
+  content: "A/7";
+  position: absolute;
+  z-index: -1;
+  right: 4%;
+  bottom: -0.18em;
+  color: rgba(255, 196, 0, 0.035);
+  font-family: var(--display);
+  font-size: clamp(8rem, 19vw, 18rem);
+  font-weight: 900;
+  letter-spacing: -0.14em;
+  transform: rotate(-4deg);
+}
+
+.artist-intro__index,
+.artist-intro__lock {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+  line-height: 1.75;
+}
+
+.artist-intro__copy h2 {
+  max-width: 12ch;
+  margin: 0.9rem 0 1.5rem;
+  font-family: var(--title);
+  font-size: clamp(2.1rem, 5.2vw, 5.4rem);
+  font-weight: 500;
+  line-height: 0.88;
+  letter-spacing: -0.045em;
+}
+
+.artist-intro__copy > p:last-child {
+  max-width: 67ch;
+  margin: 0;
+  color: rgba(232, 229, 220, 0.72);
+  font-size: clamp(0.7rem, 1vw, 0.88rem);
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+}
+
+.artist-intro__lock {
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--hot);
+  color: rgba(232, 229, 220, 0.48);
+  white-space: nowrap;
 }
 
 .transmission {
@@ -1298,10 +1357,21 @@ a {
     transform: none;
   }
 
+  .artist-intro,
   .network,
   .transmission,
   .partner,
   .secondary { padding: 5.5rem calc(var(--pad) + 0.8rem); }
+  .artist-intro {
+    display: block;
+    padding-block: 4.2rem;
+  }
+  .artist-intro__index { margin-bottom: 2.2rem; }
+  .artist-intro__copy h2 { max-width: 10ch; }
+  .artist-intro__lock {
+    margin-top: 2.2rem;
+    padding-left: 0.8rem;
+  }
   .section-heading { display: block; }
   .section-heading h2 { margin: 1rem 0 0; }
   .section-heading > p:last-child { margin-top: 1.5rem; }

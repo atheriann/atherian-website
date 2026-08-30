@@ -5,17 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="ATHERIAN — post-machine rhythm, controlled impact, and official transmissions."
+      content="Official website of Atherian, a Manhattan Schranz and techno producer, DJ, artist, and gamer. Stream music, videos, free tracks, and live channels."
     />
+    <meta name="author" content="Atherian" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#090a08" />
-    <meta property="og:title" content="ATHERIAN // 777" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="canonical" href="https://atherian.io/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta property="og:site_name" content="Atherian" />
+    <meta property="og:title" content="Atherian | Manhattan Schranz & Techno Producer" />
     <meta
       property="og:description"
-      content="Post-machine rhythm. Controlled impact. Official transmissions."
+      content="Official artist home of Atherian. Stream Schranz and techno, watch videos, claim free music, and enter the live network."
     />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary" />
-    <title>ATHERIAN // 777</title>
+    <meta property="og:url" content="https://atherian.io/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://atherian.io/og-image.png" />
+    <meta property="og:image:secure_url" content="https://atherian.io/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Atherian — Manhattan Schranz and techno artist" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Atherian | Manhattan Schranz & Techno Producer" />
+    <meta
+      name="twitter:description"
+      content="Official artist home of Atherian. Stream Schranz and techno, watch videos, claim free music, and enter the live network."
+    />
+    <meta name="twitter:image" content="https://atherian.io/og-image.png" />
+    <meta name="twitter:image:alt" content="Atherian — Manhattan Schranz and techno artist" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://atherian.io/#website",
+            "url": "https://atherian.io/",
+            "name": "Atherian",
+            "description": "Official website of Atherian, a Manhattan-based Schranz and techno producer, DJ, artist, and gamer.",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://atherian.io/#artist" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://atherian.io/#artist",
+            "name": "Atherian",
+            "url": "https://atherian.io/",
+            "email": "atherianmusic@gmail.com",
+            "jobTitle": "Music Producer and DJ",
+            "description": "Manhattan-based Schranz and techno producer, DJ, artist, and gamer.",
+            "knowsAbout": ["Schranz", "Techno", "Electronic music production", "DJing", "Gaming"],
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Manhattan, New York"
+            },
+            "sameAs": [
+              "https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ",
+              "https://music.apple.com/us/artist/atherian/1890317132",
+              "https://www.youtube.com/@Atherianmusic",
+              "https://www.twitch.tv/atherianmusic",
+              "https://www.instagram.com/atherianmusic/",
+              "https://www.tiktok.com/@atherianmusic",
+              "https://www.soundcloud.com/atherianmusicofc",
+              "https://www.beatport.com/artist/atherian/1171082",
+              "https://x.com/atherianofc"
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <title>Atherian | Manhattan Schranz &amp; Techno Producer</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
@@ -88,6 +158,20 @@
         </a>
       </section>
 
+      <section class="artist-intro" aria-labelledby="artist-intro-title">
+        <div class="artist-intro__index" aria-hidden="true">00.7 / IDENTITY</div>
+        <div class="artist-intro__copy">
+          <p class="section-kicker">OFFICIAL ARTIST HOME</p>
+          <h2 id="artist-intro-title">MANHATTAN / SCHRANZ / TECHNO</h2>
+          <p>
+            Atherian is a Manhattan-based Schranz and techno producer, DJ, artist, and gamer. Built around distorted
+            rhythm, controlled impact, and post-machine sound, this network connects new music, free downloads,
+            videos, livestreams, and official artist channels.
+          </p>
+        </div>
+        <p class="artist-intro__lock" aria-hidden="true">IDENTITY VERIFIED<br />SEQ.777 / LOCKED</p>
+      </section>
+
       <section class="transmission" id="listen" aria-labelledby="transmission-title">
         <div class="section-heading section-heading--compact transmission__heading">
           <p class="section-kicker">00 / CURRENT SIGNAL</p>
@@ -114,7 +198,7 @@
             <button class="player-start" id="player-start" type="button" disabled>
               INITIALIZE AFTERGLOW
             </button>
-            <a href="#" data-channel="afterglow" target="_blank" rel="noopener noreferrer">
+            <a href="https://open.spotify.com/track/67jGUKiPR61DZuHfv9kiOl" data-channel="afterglow" target="_blank" rel="noopener noreferrer">
               OPEN IN SPOTIFY ↗
             </a>
           </div>
@@ -142,43 +226,43 @@
         </div>
 
         <nav class="channel-list" aria-label="Atherian channels">
-          <a class="channel channel--featured" href="#" data-channel="music" target="_blank" rel="noopener noreferrer">
+          <a class="channel channel--featured" href="https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ" data-channel="music" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">001</span>
             <span class="channel__name">MUSIC</span>
             <span class="channel__meta">STREAM ATHERIAN</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="youtube" target="_blank" rel="noopener noreferrer">
+          <a class="channel" href="https://www.youtube.com/@Atherianmusic" data-channel="youtube" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">002</span>
             <span class="channel__name">YOUTUBE</span>
             <span class="channel__meta">VISUAL OUTPUT</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="twitch" target="_blank" rel="noopener noreferrer">
+          <a class="channel" href="https://www.twitch.tv/atherianmusic" data-channel="twitch" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">003</span>
             <span class="channel__name">TWITCH</span>
             <span class="channel__meta">LIVE SIGNAL</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="soundcloud" target="_blank" rel="noopener noreferrer">
+          <a class="channel" href="https://www.soundcloud.com/atherianmusicofc" data-channel="soundcloud" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">004</span>
             <span class="channel__name">SOUNDCLOUD</span>
             <span class="channel__meta">AUDIO ARCHIVE</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="instagram" target="_blank" rel="noopener noreferrer">
+          <a class="channel" href="https://www.instagram.com/atherianmusic/" data-channel="instagram" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">005</span>
             <span class="channel__name">INSTAGRAM</span>
             <span class="channel__meta">FIELD LOG</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="x" target="_blank" rel="noopener noreferrer">
+          <a class="channel" href="https://x.com/atherianofc" data-channel="x" target="_blank" rel="me noopener noreferrer">
             <span class="channel__number">006</span>
             <span class="channel__name">X / TWITTER</span>
             <span class="channel__meta">SHORT SIGNAL</span>
             <span class="channel__action" aria-hidden="true">↗</span>
           </a>
-          <a class="channel" href="#" data-channel="contact">
+          <a class="channel" href="mailto:atherianmusic@gmail.com" data-channel="contact">
             <span class="channel__number">007</span>
             <span class="channel__name">CONTACT</span>
             <span class="channel__meta">DIRECT CHANNEL</span>
@@ -195,7 +279,7 @@
 
         <a
           class="partner-card"
-          href="#"
+          href="https://concept47.store/?sca_ref=11908093.yRMr5Heufwwvy"
           data-channel="concept47"
           target="_blank"
           rel="sponsored noopener noreferrer"
@@ -224,7 +308,7 @@
 
         <a
           class="partner-card partner-card--free"
-          href="#"
+          href="https://hypeddit.com/atherian/beautifulschranz"
           data-channel="freeDownload"
           target="_blank"
           rel="noopener noreferrer"
@@ -248,10 +332,10 @@
           <h2 id="secondary-title">MORE OUTPUT</h2>
         </div>
         <div class="secondary__grid">
-          <a href="#" data-channel="spotify" target="_blank" rel="noopener noreferrer"><span>SPOTIFY</span><span>↗</span></a>
-          <a href="#" data-channel="appleMusic" target="_blank" rel="noopener noreferrer"><span>APPLE MUSIC</span><span>↗</span></a>
-          <a href="#" data-channel="tiktok" target="_blank" rel="noopener noreferrer"><span>TIKTOK</span><span>↗</span></a>
-          <a href="#" data-channel="beatport" target="_blank" rel="noopener noreferrer"><span>BEATPORT</span><span>↗</span></a>
+          <a href="https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ" data-channel="spotify" target="_blank" rel="me noopener noreferrer"><span>SPOTIFY</span><span>↗</span></a>
+          <a href="https://music.apple.com/us/artist/atherian/1890317132" data-channel="appleMusic" target="_blank" rel="me noopener noreferrer"><span>APPLE MUSIC</span><span>↗</span></a>
+          <a href="https://www.tiktok.com/@atherianmusic" data-channel="tiktok" target="_blank" rel="me noopener noreferrer"><span>TIKTOK</span><span>↗</span></a>
+          <a href="https://www.beatport.com/artist/atherian/1171082" data-channel="beatport" target="_blank" rel="me noopener noreferrer"><span>BEATPORT</span><span>↗</span></a>
         </div>
       </section>
     </main>

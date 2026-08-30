@@ -44,3 +44,9 @@ GitHub will provide the live site address after the first deployment finishes.
 All visible words and labels are in `index.html`. Search for `CHAOS IS NOT A FAILURE` to edit the manifesto, or `POST-MACHINE RHYTHM` to edit the supporting description.
 
 Colors are at the top of `styles.css`. The hot amber accent is `--hot: #ffc400`.
+
+## Search and sharing
+
+The site includes a canonical URL, descriptive search metadata, Open Graph and X cards, Atherian artist structured data, crawlable channel links, `robots.txt`, and `sitemap.xml`. The A/7 favicon package includes SVG, ICO, PNG, Apple touch, and web-app sizes.
+
+After publishing major changes, submit `https://atherian.io/sitemap.xml` in Google Search Console and Bing Webmaster Tools. Use the home-page URL inspection tool to request a recrawl when the title, description, or favicon changes.

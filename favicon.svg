@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Atherian A7 mark">
+  <path fill="#090a08" d="M40 0h432l40 40v432l-40 40H40L0 472V40z"/>
+  <path fill="none" stroke="#3a382f" stroke-width="8" d="M54 24h404l30 30v404l-30 30H54l-30-30V54z"/>
+  <path fill="#ffc400" d="M120 402 228 104h59L392 402h-66l-25-78H205l-24 78zm105-138h57l-28-94z"/>
+  <path fill="#e8e5dc" d="M231 283h82v25l-43 101h-43l43-88h-39z"/>
+  <path fill="#090a08" d="M191 271h137v18H191z"/>
+  <path fill="#ffc400" d="M75 75h48v8H75zm314 354h48v8h-48z"/>
+</svg>
