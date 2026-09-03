@@ -2,6 +2,14 @@
 
 A dependency-free, mobile-first artist homepage. It is ready to publish as a GitHub Pages site.
 
+## Featured release
+
+The first section in `index.html` showcases **Animate — Atherian / Tholos Records**, releasing September 9, 2026 on all platforms. The unmodified supplied cover lives at `assets/animate-official-artwork.jpg`; `releases.css` adds intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
+
+`releases.js` switches the announcement to “Out now” on September 9 in the visitor’s local calendar and refreshes it each minute. No precise release hour has been assumed. The release date remains visible. No track or pre-save address has been supplied, so the music link points to the existing player rather than pretending to play the upcoming release.
+
+To feature a future release, update the section’s title, artist, label, artwork, date, and announcement in `index.html`, the artwork background in `releases.css`, and the date/copy in `releases.js`. JavaScript months are zero-based (September is `8`). The rest of the artist homepage and its existing channel configuration are preserved.
+
 ## Replace the channel links
 
 Open `script.js`. At the very top, find the `CHANNELS` list and replace each placeholder URL with the real Atherian URL.
