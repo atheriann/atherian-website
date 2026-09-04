@@ -4,11 +4,20 @@ A dependency-free, mobile-first artist homepage. It is ready to publish as a Git
 
 ## Featured release
 
-The first section in `index.html` showcases **Animate — Atherian / Tholos Records**, releasing September 9, 2026 on all platforms. The unmodified supplied cover lives at `assets/animate-official-artwork.jpg`; `releases.css` adds intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
+The first section in `index.html` showcases **Animate — Atherian / Tholos Records (THOLOS063)**, released September 4, 2026. The permanent announcement is “SIGNAL RELEASED // OUT NOW.” The unmodified supplied cover lives at `assets/animate-official-artwork.jpg`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
 
-`releases.js` switches the announcement to “Out now” on September 9 in the visitor’s local calendar and refreshes it each minute. No precise release hour has been assumed. The release date remains visible. No track or pre-save address has been supplied, so the music link points to the existing player rather than pretending to play the upcoming release.
+Release-specific destinations were verified September 4, 2026 against the artist, label, and matching three-track sequence (Low, Otherside, Underground):
 
-To feature a future release, update the section’s title, artist, label, artwork, date, and announcement in `index.html`, the artwork background in `releases.css`, and the date/copy in `releases.js`. JavaScript months are zero-based (September is `8`). The rest of the artist homepage and its existing channel configuration are preserved.
+- Spotify: https://open.spotify.com/album/2SfPcPDQuzq9QCBG8obvmJ
+- Apple Music: https://music.apple.com/us/album/animate-single/6801222164
+- SoundCloud: https://soundcloud.com/tholos_records/sets/atherian-animate-1
+- Beatport: https://www.beatport.com/release/animate/7346739
+
+Apple Music currently associates Animate with artist ID 976694533, rather than the site's existing artist ID 1890317132. The direct album was verified through Apple's public catalog and its Tholos Records credit and matching tracks; the unrelated artist-channel configuration is unchanged. The SoundCloud destination is the full official label EP, not a single preview or profile.
+
+Links sit beside the cover on desktop and directly below it on mobile. All four destinations and the released announcement work without JavaScript. `releases.js` only controls optional motion; no date timer can restore the old upcoming-release copy.
+
+To feature a future release, update the section’s title, artist, label, artwork, announcement, track names, catalog code, and verified destination links in `index.html`, plus the artwork background in `releases.css`. The rest of the artist homepage and its existing channel configuration are preserved.
 
 ## Replace the channel links
 

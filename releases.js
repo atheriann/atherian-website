@@ -1,20 +1,7 @@
-/* Release dates are calendar dates; no unconfirmed release hour or track URL. */
+/* Released-state copy is permanent HTML; only optional motion needs JavaScript. */
 (() => {
   const section = document.getElementById("latest-release");
   if (!section) return;
-
-  function updateReleaseStatus() {
-    const now = new Date();
-    const released = now >= new Date(2026, 8, 9);
-    section.querySelector("[data-release-announcement]").textContent = released
-      ? "OUT NOW"
-      : "OUT SEPTEMBER 9, 2026";
-    section.querySelector("[data-release-status]").textContent = released
-      ? "RELEASED SEPTEMBER 9, 2026"
-      : "INCOMING RELEASE";
-  }
-  updateReleaseStatus();
-  window.setInterval(updateReleaseStatus, 60_000);
 
   const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const button = section.querySelector(".release__motion");
