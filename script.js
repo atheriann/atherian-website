@@ -22,6 +22,9 @@ const CHANNELS = {
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 const PLAYER_QUEUE = [
+  { title: "Low", uri: "spotify:track:0htzceoVRTRhGJgt8xTHXd" },
+  { title: "Otherside", uri: "spotify:track:0L8PihA3Y6AjI45w3iWmm1" },
+  { title: "Underground", uri: "spotify:track:2Ry5VvQGivz4PrmgcHTMkx" },
   { title: "Afterglow", uri: "spotify:track:67jGUKiPR61DZuHfv9kiOl" },
   { title: "This Way", uri: "spotify:track:2scoIxBZ6V1hrmLYsazUG9" },
   { title: "Vessel", uri: "spotify:track:555fGTSBhOEuBW839LKPU4" },
@@ -37,6 +40,12 @@ let playerHasStarted = false;
 let playerIsAdvancing = false;
 
 function updatePlayerQueue(index) {
+  const track = PLAYER_QUEUE[index];
+  const identity = document.querySelector(".player-identity");
+  const duration = playerQueueItems[index]?.querySelector("em")?.textContent;
+  identity.querySelector("h3").textContent = track.title.toUpperCase();
+  identity.querySelector("p:last-child").textContent = `CURRENT SIGNAL / ${duration}`;
+  document.getElementById("player-open").href = `https://open.spotify.com/track/${track.uri.split(":").pop()}`;
   playerQueueItems.forEach((item, itemIndex) => {
     const isActive = itemIndex === index;
     item.classList.toggle("is-active", isActive);
@@ -69,7 +78,8 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
 
       controller.addListener("ready", () => {
         playerStart.disabled = false;
-        playerStart.textContent = "INITIALIZE AFTERGLOW";
+        playerStart.textContent = `INITIALIZE ${PLAYER_QUEUE[0].title.toUpperCase()}`;
+        updatePlayerQueue(0);
         document.addEventListener("pointerdown", handleAmbientStart);
         window.setTimeout(() => controller.play(), 180);
       });

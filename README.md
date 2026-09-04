@@ -43,7 +43,7 @@ The live Spotify, Apple Music, SoundCloud, Beatport, TikTok, Instagram, and Conc
 
 ## Spotify player
 
-The homepage player starts with Atherian’s “Afterglow” and continues through a five-track Atherian sequence using Spotify’s official embed player. Browser autoplay rules may require the visitor to press the player’s play button. Track addresses and order are in the `PLAYER_QUEUE` list near the top of `script.js`.
+The homepage player starts with Atherian’s “Low,” then plays “Otherside,” “Underground,” “Afterglow,” “This Way,” “Vessel,” “Violence,” and “Turok” before looping back to “Low,” using Spotify’s official embed player. All three Animate track IDs were verified against the release's Spotify album. Browser autoplay rules may require the visitor to press the player’s play button. Track addresses and order are in the `PLAYER_QUEUE` list near the top of `script.js`; keep the visible queue in `index.html` aligned. The current title, duration, active row, and Spotify link follow the queue as it advances.
 
 If you do not use one of the four channels in “More Output,” remove its matching `<a>` element from `index.html`.
 
