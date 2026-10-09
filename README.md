@@ -19,6 +19,17 @@ Links sit beside the cover on desktop and directly below it on mobile. All four 
 
 To feature a future release, update the section’s title, artist, label, artwork, announcement, track names, catalog code, and verified destination links in `index.html`, plus the artwork background in `releases.css`. The rest of the artist homepage and its existing channel configuration are preserved.
 
+## Latest set
+
+The homepage hierarchy is Animate EP, latest guest set, artist introduction, then the existing player and channels. The top navigation links directly to the EP, latest set, and channels. The `#latest-set` anchor also provides a direct social promotion destination: `https://atherian.io/#latest-set`.
+
+The guest set is **SOSNYC Podcast 004: Atherian**, a one-hour Sounds of Schranz NYC set published October 6, 2026. Its official artwork is stored unmodified at `assets/sosnyc-podcast-004.jpg`; layout and mobile styles are in `spotlight.css`.
+
+- Featured set: https://soundcloud.com/soundsofschranznyc/sosnyc-podcast-004-atherian
+- Artist's podcast collection: https://soundcloud.com/atherianmusicofc/sets/podcasts
+
+SoundCloud currently restricts this track's embedding (`embeddable_by: me`), and the official playlist widget presents “Play on SoundCloud.” The feature therefore uses direct listening links instead of an unavailable inline player. All new content and links work without JavaScript. A social video can be featured alongside this set once its specific destination or file is supplied; no empty video placeholder is published.
+
 ## Replace the channel links
 
 Open `script.js`. At the very top, find the `CHANNELS` list and replace each placeholder URL with the real Atherian URL.

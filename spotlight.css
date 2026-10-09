@@ -1,0 +1,79 @@
+/* The EP leads; the latest guest set sits directly below, before the artist intro. */
+.feature-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(.8rem, 3vw, 2.5rem);
+  font-size: .875rem;
+  letter-spacing: .06em;
+}
+.feature-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.feature-nav a[href="#latest-set"] { color: var(--hot); }
+.feature-nav a:hover { color: var(--hot); text-decoration: underline; text-underline-offset: .35em; }
+.feature-nav a:focus-visible,
+.spotlight a:focus-visible { outline: 2px solid var(--hot); outline-offset: 6px; }
+
+.spotlight {
+  position: relative;
+  padding: 2rem calc(var(--pad) + 1.25rem) 3.5rem;
+  border-bottom: 1px solid var(--line);
+  background: #0d0e0c;
+  scroll-margin-top: 1rem;
+}
+.spotlight__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--line);
+  font-size: .875rem;
+  line-height: 1.5;
+  letter-spacing: .1em;
+}
+.spotlight__topline p { margin: 0; color: var(--hot); }
+.spotlight__topline time { color: var(--release-muted); }
+.spotlight__layout {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: 1200px;
+  margin: 2.5rem auto 0;
+}
+.spotlight__artwork { display: block; max-width: 440px; width: 100%; }
+.spotlight__artwork img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.spotlight__art-label { display: block; margin-top: .75rem; color: var(--release-muted); font-size: .75rem; line-height: 1.5; letter-spacing: .08em; }
+.spotlight__copy { min-width: 0; }
+.spotlight__eyebrow { margin: 0 0 1rem; color: var(--release-muted); font-size: .875rem; line-height: 1.6; letter-spacing: .12em; }
+.spotlight h2 {
+  margin: 0;
+  font-family: var(--title);
+  font-size: clamp(2rem, 4.2vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -.035em;
+}
+.spotlight h2 span { color: var(--hot); }
+.spotlight__artist { margin: 1.2rem 0 0; font-size: 1rem; line-height: 1.6; letter-spacing: .1em; }
+.spotlight__artist span { margin-inline: .5rem; color: var(--hot); }
+.spotlight__description { max-width: 40ch; margin: 1rem 0 1.7rem; color: var(--release-muted); font-size: 1rem; line-height: 1.7; }
+.spotlight__actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1.5rem; }
+.spotlight__listen { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 52px; padding: .9rem 1.2rem; background: var(--hot); color: var(--ink); font-size: .875rem; font-weight: 700; line-height: 1.5; letter-spacing: .04em; }
+.spotlight__listen:hover { background: var(--paper); }
+.spotlight__archive { display: inline-flex; align-items: center; min-height: 44px; padding-block: .5rem; font-size: .875rem; line-height: 1.5; text-decoration: underline; text-underline-offset: .35em; }
+.spotlight__archive:hover { color: var(--hot); }
+.spotlight__platform { margin: 1rem 0 0; color: var(--release-muted); font-size: .75rem; line-height: 1.5; letter-spacing: .08em; }
+
+@media (max-width: 760px) {
+  .topbar { grid-template-columns: auto minmax(0, 1fr); gap: 1rem; }
+  .topbar .sequence { display: none; }
+  .feature-nav { justify-content: flex-end; gap: .5rem 1rem; font-size: .875rem; letter-spacing: 0; }
+  .spotlight { padding: 1.8rem calc(var(--pad) + .8rem) 2.5rem; }
+  .spotlight__layout { grid-template-columns: 1fr; gap: 1.8rem; margin-top: 1.8rem; }
+  .spotlight__artwork { max-width: 430px; margin-inline: auto; }
+  .spotlight h2 { font-size: clamp(2rem, 9vw, 4rem); }
+  .spotlight__description { max-width: 44ch; }
+}
