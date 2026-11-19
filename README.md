@@ -6,14 +6,11 @@ A dependency-free, mobile-first artist homepage. It is ready to publish as a Git
 
 The first section in `index.html` showcases the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
 
-Until release-specific Break Point destinations are public, the spotlight links to Atherian's artist profiles:
+Before release, the spotlight presents one focused pre-order destination:
 
-- Spotify: https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ
-- Apple Music: https://music.apple.com/us/artist/atherian/1719169528
-- SoundCloud: https://www.soundcloud.com/atherianmusicofc
-- Beatport: https://www.beatport.com/artist/atherian/1171082
+- Beatport: https://www.beatport.com/release/break-point/7653170
 
-Links sit beside the cover on desktop and directly below it on mobile. All four artist destinations and the upcoming-release announcement work without JavaScript. `releases.js` only controls optional motion.
+The pre-order link sits beside the cover on desktop and directly below it on mobile. It and the upcoming-release announcement work without JavaScript. `releases.js` only controls optional motion. The broader network section retains Atherian's artist-profile links.
 
 To feature a future release, update the section’s title, artist, label, artwork, announcement, track names, catalog code, and verified destination links in `index.html`, plus the artwork background in `releases.css`. The rest of the artist homepage and its existing channel configuration are preserved.
 
