@@ -14,7 +14,7 @@ const CHANNELS = {
   concept47: "https://concept47.store/?sca_ref=11908093.yRMr5Heufwwvy",
   freeDownload: "https://hypeddit.com/atherian/beautifulschranz",
   spotify: "https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ",
-  appleMusic: "https://music.apple.com/us/artist/atherian/1890317132",
+  appleMusic: "https://music.apple.com/us/artist/atherian/1719169528",
   tiktok: "https://www.tiktok.com/@atherianmusic",
   beatport: "https://www.beatport.com/artist/atherian/1171082",
 };

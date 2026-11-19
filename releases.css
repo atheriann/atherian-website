@@ -1,6 +1,6 @@
 /* Latest-release feature. Keep the official cover intact underneath the slices. */
 :root {
-  --release-gold: #ffc400;
+  --release-gold: #ff6a00;
   --release-white: #f5f1e6;
   --release-muted: #bbb5a4;
 }
@@ -10,7 +10,7 @@
   isolation: isolate;
   overflow: hidden;
   padding: 7.5rem calc(var(--pad) + 1.25rem) 1.7rem;
-  background: radial-gradient(ellipse at 78% 40%, #59420c33, transparent 57%), #090a08;
+  background: radial-gradient(ellipse at 78% 40%, #78300033, transparent 57%), #090a08;
   border-bottom: 1px solid var(--line);
   color: var(--release-white);
 }
@@ -36,7 +36,7 @@
 }
 .release__topline { padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
 .release__topline p { display: flex; align-items: center; gap: .65rem; margin: 0; color: var(--release-gold); font-size: .875rem; }
-.release__dot { width: .5rem; height: .5rem; background: currentColor; box-shadow: 0 0 18px #ffc40055; }
+.release__dot { width: .5rem; height: .5rem; background: currentColor; box-shadow: 0 0 18px #ff6a0066; }
 .release__edition { color: var(--release-muted); }
 .release__layout {
   display: grid;
@@ -81,17 +81,17 @@
 .release__action { display: inline-flex; align-items: center; gap: .8rem; color: var(--release-muted); white-space: nowrap; }
 .release__action > span { color: var(--release-gold); font-size: 1.25rem; line-height: 1; transition: transform .2s; }
 .release__destination--buy { color: var(--release-gold); border-bottom-color: var(--release-gold); }
-.release__destination:hover { color: var(--release-gold); background: #ffc4000a; border-color: var(--release-gold); }
+.release__destination:hover { color: var(--release-gold); background: #ff6a000c; border-color: var(--release-gold); }
 .release__destination:hover .release__action > span { transform: translate(2px, -2px); }
 .release__catalog { max-width: 30rem; margin: 1.1rem 0 0; color: var(--release-muted); font-size: .75rem; line-height: 1.8; letter-spacing: .06em; }
 .release__catalog span { color: var(--release-gold); }
 .release__artwork { width: 100%; max-width: 550px; margin: 0 auto; }
-.release__art-frame { position: relative; width: 100%; background: #181509; box-shadow: 0 20px 70px #0009; }
+.release__art-frame { position: relative; width: 100%; background: #160b07; box-shadow: 0 20px 70px #0009; }
 .release__cover { display: block; width: 100%; height: auto; }
 .release__slice {
   position: absolute;
   inset: 0;
-  background: url("assets/animate-official-artwork.jpg") center / 100% 100% no-repeat;
+  background: url("assets/break-point-official-artwork.png") center / 100% 100% no-repeat;
   opacity: 0;
   pointer-events: none;
   animation: release-art-cut 7.77s steps(1, end) infinite;
@@ -99,7 +99,7 @@
 .release__slice--one { clip-path: inset(18% 0 68%); --cut-x: -13px; --cut-y: 2px; filter: saturate(1.5); }
 .release__slice--two { clip-path: inset(46% 0 48%); --cut-x: 19px; --cut-y: -2px; animation-delay: .13s; filter: grayscale(1); }
 .release__slice--three { clip-path: inset(72% 0 18%); --cut-x: -9px; --cut-y: 1px; animation-delay: .28s; filter: sepia(.6) saturate(1.3); }
-.release__scan { position: absolute; inset: 0; pointer-events: none; opacity: 0; background: linear-gradient(transparent 49.4%, #ffd76033 49.8%, #fff4 50%, transparent 50.6%); background-size: 100% 200%; animation: release-scan 7.77s linear infinite; }
+.release__scan { position: absolute; inset: 0; pointer-events: none; opacity: 0; background: linear-gradient(transparent 49.4%, #ff8a4233 49.8%, #fff4 50%, transparent 50.6%); background-size: 100% 200%; animation: release-scan 7.77s linear infinite; }
 .release__corner { position: absolute; width: 27px; height: 27px; pointer-events: none; border-color: var(--release-gold); border-style: solid; }
 .release__corner--top { top: -7px; left: -7px; border-width: 2px 0 0 2px; }
 .release__corner--bottom { bottom: -7px; right: -7px; border-width: 0 2px 2px 0; }

@@ -4,18 +4,16 @@ A dependency-free, mobile-first artist homepage. It is ready to publish as a Git
 
 ## Featured release
 
-The first section in `index.html` showcases **Animate — Atherian / Tholos Records (THOLOS063)**, released September 4, 2026. The permanent announcement is “SIGNAL RELEASED // OUT NOW.” The unmodified supplied cover lives at `assets/animate-official-artwork.jpg`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
+The first section in `index.html` showcases the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
 
-Release-specific destinations were verified September 4, 2026 against the artist, label, and matching three-track sequence (Low, Otherside, Underground):
+Until release-specific Break Point destinations are public, the spotlight links to Atherian's artist profiles:
 
-- Spotify: https://open.spotify.com/album/2SfPcPDQuzq9QCBG8obvmJ
-- Apple Music: https://music.apple.com/us/album/animate-single/6801222164
-- SoundCloud: https://soundcloud.com/tholos_records/sets/atherian-animate-1
-- Beatport: https://www.beatport.com/release/animate/7346739
+- Spotify: https://open.spotify.com/artist/7wcJzngrum5BfE5cAXrnfZ
+- Apple Music: https://music.apple.com/us/artist/atherian/1719169528
+- SoundCloud: https://www.soundcloud.com/atherianmusicofc
+- Beatport: https://www.beatport.com/artist/atherian/1171082
 
-Apple Music currently associates Animate with artist ID 976694533, rather than the site's existing artist ID 1890317132. The direct album was verified through Apple's public catalog and its Tholos Records credit and matching tracks; the unrelated artist-channel configuration is unchanged. The SoundCloud destination is the full official label EP, not a single preview or profile.
-
-Links sit beside the cover on desktop and directly below it on mobile. All four destinations and the released announcement work without JavaScript. `releases.js` only controls optional motion; no date timer can restore the old upcoming-release copy.
+Links sit beside the cover on desktop and directly below it on mobile. All four artist destinations and the upcoming-release announcement work without JavaScript. `releases.js` only controls optional motion.
 
 To feature a future release, update the section’s title, artist, label, artwork, announcement, track names, catalog code, and verified destination links in `index.html`, plus the artwork background in `releases.css`. The rest of the artist homepage and its existing channel configuration are preserved.
 
