@@ -4,7 +4,9 @@ A dependency-free, mobile-first artist homepage. It is ready to publish as a Git
 
 ## Featured release
 
-The first section in `index.html` showcases the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
+The first viewport temporarily spotlights **I Really Want to Stay at Your House (Atherian Schranz Edit) [FREE DL]**, released November 18, 2026. Its official SoundCloud artwork is stored at `assets/stay-at-your-house-schanz-edit.jpg`, and both the artwork and primary button link to the supplied SoundCloud share URL.
+
+The following EP section showcases the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
 
 Before release, the spotlight presents one focused pre-order destination:
 

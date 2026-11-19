@@ -9,7 +9,7 @@
   letter-spacing: .06em;
 }
 .feature-nav a { display: inline-flex; align-items: center; min-height: 44px; }
-.feature-nav a[href="#latest-set"] { color: var(--hot); }
+.feature-nav a[href="#new-release"] { color: var(--hot); }
 .feature-nav a:hover { color: var(--hot); text-decoration: underline; text-underline-offset: .35em; }
 .feature-nav a:focus-visible,
 .spotlight a:focus-visible { outline: 2px solid var(--hot); outline-offset: 6px; }
