@@ -10,7 +10,7 @@
   isolation: isolate;
   overflow: hidden;
   padding: 7.5rem calc(var(--pad) + 1.25rem) 1.7rem;
-  background: radial-gradient(ellipse at 78% 40%, #78300033, transparent 57%), #090a08;
+  background: radial-gradient(ellipse at 78% 40%, #7830002b, transparent 57%);
   border-bottom: 1px solid var(--line);
   color: var(--release-white);
 }

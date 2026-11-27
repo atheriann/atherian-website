@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500&display=swap");
 
 :root {
-  --ink: #090a08;
-  --ink-soft: #0f100d;
+  --ink: #050504;
+  --ink-soft: #0a0a08;
   --paper: #e8e5dc;
   --muted: #898880;
   --line: rgba(232, 229, 220, 0.2);
@@ -20,14 +20,11 @@
 
 html {
   scroll-behavior: smooth;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px),
-    var(--ink);
-  background-size: 64px 64px;
+  background: var(--ink);
 }
 
 body {
+  isolation: isolate;
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
@@ -44,11 +41,25 @@ body::before {
   z-index: 20;
   inset: 0;
   pointer-events: none;
-  opacity: 0.14;
+  opacity: 0.07;
   background:
     repeating-radial-gradient(circle at 18% 27%, transparent 0 1px, rgba(255, 255, 255, 0.12) 1px 2px, transparent 2px 5px),
     repeating-radial-gradient(circle at 73% 62%, transparent 0 2px, rgba(255, 255, 255, 0.08) 2px 3px, transparent 3px 7px);
   background-size: 31px 37px, 43px 47px;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -2;
+  inset: 50% 0 auto;
+  height: max(45vw, 20rem);
+  transform: translateY(-50%);
+  background: url("assets/nyc-graffiti-mural.svg") center / cover no-repeat;
+  mask-image: linear-gradient(transparent, black 18%, black 82%, transparent);
+  filter: brightness(.7);
+  opacity: 0.1;
+  pointer-events: none;
 }
 
 a {

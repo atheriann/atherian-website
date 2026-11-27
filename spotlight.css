@@ -18,7 +18,7 @@
   position: relative;
   padding: 2rem calc(var(--pad) + 1.25rem) 3.5rem;
   border-bottom: 1px solid var(--line);
-  background: #0d0e0c;
+  background: rgba(9, 10, 8, 0.2);
   scroll-margin-top: 1rem;
 }
 .spotlight__topline {
