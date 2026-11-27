@@ -706,6 +706,8 @@ a {
   display: block;
   width: 100% !important;
   border: 0;
+  /* Mask the light fringe just inside Spotify's rounded edge. */
+  clip-path: inset(2px round 14px);
 }
 
 .player-controls {
