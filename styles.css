@@ -575,7 +575,7 @@ a {
 
 .artist-intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
   align-items: end;
   gap: 1.5rem clamp(2rem, 5vw, 6rem);
   padding-block: clamp(3.5rem, 7vw, 6rem);
@@ -607,9 +607,9 @@ a {
 
 .artist-intro__index { grid-column: 1 / -1; }
 
-.artist-intro__copy h2 {
+.artist-intro__heading h2 {
   max-width: 12ch;
-  margin: 0.9rem 0 1.5rem;
+  margin: 0.9rem 0 0;
   font-family: var(--title);
   font-size: clamp(1.85rem, 4.35vw, 4.6rem);
   font-weight: 500;
@@ -617,19 +617,22 @@ a {
   letter-spacing: -0.045em;
 }
 
-.artist-intro__copy > p:last-child {
-  max-width: 67ch;
+.artist-intro__details {
+  justify-self: end;
+  width: min(100%, 25rem);
+  padding-inline-start: 1.2rem;
+  border-inline-start: 1px solid var(--hot);
+}
+
+.artist-intro__bio {
   margin: 0;
-  color: rgba(232, 229, 220, 0.72);
-  font-size: calc(clamp(0.7rem, 1vw, 0.88rem) - 4pt);
-  line-height: 1.9;
-  letter-spacing: 0.035em;
+  color: rgba(232, 229, 220, 0.8);
+  font-size: clamp(.75rem, 1.05vw, .8125rem);
+  line-height: 1.75;
 }
 
 .artist-intro__lock {
-  padding-left: 1.2rem;
-  border-left: 1px solid var(--hot);
-  color: rgba(232, 229, 220, 0.48);
+  margin-top: 1rem;
   white-space: nowrap;
 }
 
@@ -1386,6 +1389,17 @@ a {
 
 @media (max-width: 760px) {
   :root { --rail-gap: .8rem; }
+  .artist-intro {
+    grid-template-columns: minmax(0, 1fr);
+    padding-block: 4.2rem;
+  }
+  .artist-intro__heading h2 { max-width: 10ch; }
+  .artist-intro__details {
+    justify-self: start;
+    padding: 1rem 0 0;
+    border-inline-start: 0;
+    border-top: 1px solid var(--line-strong);
+  }
 }
 
 @media (max-width: 720px) {
@@ -1430,21 +1444,10 @@ a {
     transform: none;
   }
 
-  .artist-intro,
   .network,
   .transmission,
   .partner,
   .secondary { padding-block: 5.5rem; }
-  .artist-intro {
-    display: block;
-    padding-block: 4.2rem;
-  }
-  .artist-intro__index { margin-bottom: 2.2rem; }
-  .artist-intro__copy h2 { max-width: 10ch; }
-  .artist-intro__lock {
-    margin-top: 2.2rem;
-    padding-left: 0.8rem;
-  }
   .section-heading { display: block; }
   .section-heading h2 { margin: 1rem 0 0; }
   .section-heading > p:last-child { margin-top: 1.5rem; }
