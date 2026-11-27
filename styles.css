@@ -57,7 +57,7 @@ body::after {
   transform: translateY(-50%);
   background: url("assets/nyc-graffiti-mural.svg") center / cover no-repeat;
   mask-image: linear-gradient(transparent, black 18%, black 82%, transparent);
-  filter: brightness(.7);
+  filter: brightness(.65);
   opacity: 0.1;
   pointer-events: none;
 }
