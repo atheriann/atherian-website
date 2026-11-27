@@ -614,7 +614,7 @@ a {
   max-width: 67ch;
   margin: 0;
   color: rgba(232, 229, 220, 0.72);
-  font-size: clamp(0.7rem, 1vw, 0.88rem);
+  font-size: calc(clamp(0.7rem, 1vw, 0.88rem) - 4pt);
   line-height: 1.9;
   letter-spacing: 0.035em;
 }
