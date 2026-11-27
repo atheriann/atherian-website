@@ -9,7 +9,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 7.5rem calc(var(--pad) + 1.25rem) 1.7rem;
+  padding: 7.5rem var(--content-gutter) 1.7rem;
   background: radial-gradient(ellipse at 78% 40%, #7830002b, transparent 57%);
   border-bottom: 1px solid var(--line);
   color: var(--release-white);
@@ -43,8 +43,6 @@
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 6rem);
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 2.5rem 0;
 }
 .release__copy { min-width: 0; }
@@ -53,13 +51,14 @@
 .release__title {
   position: relative;
   width: fit-content;
-  margin: 0 0 2rem -.045em;
+  margin: 0 0 2rem;
   font-family: var(--display);
   font-weight: 900;
   font-size: clamp(2.6rem, 6.25vw, 7rem);
   line-height: .9;
   letter-spacing: -.065em;
   transform: skewX(-6deg);
+  transform-origin: left bottom;
 }
 .release__title::before,
 .release__title::after {
@@ -85,7 +84,7 @@
 .release__destination:hover .release__action > span { transform: translate(2px, -2px); }
 .release__catalog { max-width: 30rem; margin: 1.1rem 0 0; color: var(--release-muted); font-size: .75rem; line-height: 1.8; letter-spacing: .06em; }
 .release__catalog span { color: var(--release-gold); }
-.release__artwork { width: 100%; max-width: 550px; margin: 0 auto; }
+.release__artwork { width: 100%; max-width: 550px; margin: 0; justify-self: end; }
 .release__art-frame { position: relative; width: 100%; background: #160b07; box-shadow: 0 20px 70px #0009; }
 .release__cover { display: block; width: 100%; height: auto; }
 .release__slice {
@@ -133,13 +132,13 @@
 }
 @media (min-width: 1600px) { .release__layout { padding-block: 3.5rem; } }
 @media (max-width: 760px) {
-  .release { padding: 6.5rem calc(var(--pad) + .8rem) 1.1rem; }
+  .release { padding-block: 6.5rem 1.1rem; }
   .release__edition { display: none; }
   .release__layout { grid-template-columns: 1fr; gap: 2rem; padding-block: 1.8rem; }
   .release__copy { display: contents; }
   .release__artist { grid-row: 1; margin: 0; font-size: .875rem; }
-  .release__title { grid-row: 2; margin: -1rem 0 -.5rem -.03em; font-size: clamp(2.25rem, 10.75vw, 5rem); }
-  .release__artwork { grid-row: 5; max-width: 430px; }
+  .release__title { grid-row: 2; margin-block: -1rem -.5rem; font-size: clamp(2.25rem, 10.75vw, 5rem); }
+  .release__artwork { grid-row: 5; max-width: 430px; justify-self: start; }
   .release__announcement { grid-row: 3; margin-top: -.3rem; }
   .release__platforms { grid-row: 4; margin: -1.5rem 0 -.3rem; font-size: .875rem; }
   .release__destinations { grid-row: 6; width: 100%; max-width: none; margin-top: -.5rem; }
