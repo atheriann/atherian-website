@@ -5,11 +5,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: clamp(.8rem, 3vw, 2.5rem);
-  font-size: .875rem;
+  font-size: .8125rem;
   letter-spacing: .06em;
 }
 .feature-nav a { display: inline-flex; align-items: center; min-height: 44px; }
-.feature-nav a[href="#new-release"] { color: var(--hot); }
+.feature-nav a[href="#latest-release"] { color: var(--hot); }
 .feature-nav a:hover { color: var(--hot); text-decoration: underline; text-underline-offset: .35em; }
 .feature-nav a:focus-visible,
 .spotlight a:focus-visible { outline: 2px solid var(--hot); outline-offset: 6px; }
@@ -51,15 +51,15 @@
 .spotlight h2 {
   margin: 0;
   font-family: var(--title);
-  font-size: clamp(2rem, 4.2vw, 4.5rem);
+  font-size: clamp(1.7rem, 3.5vw, 3.8rem);
   font-weight: 500;
   line-height: 1.06;
   letter-spacing: -.035em;
 }
 .spotlight h2 span { color: var(--hot); }
-.spotlight__artist { margin: 1.2rem 0 0; font-size: 1rem; line-height: 1.6; letter-spacing: .1em; }
+.spotlight__artist { margin: 1.2rem 0 0; font-size: .9375rem; line-height: 1.6; letter-spacing: .1em; }
 .spotlight__artist span { margin-inline: .5rem; color: var(--hot); }
-.spotlight__description { max-width: 40ch; margin: 1rem 0 1.7rem; color: var(--release-muted); font-size: 1rem; line-height: 1.7; }
+.spotlight__description { max-width: 40ch; margin: 1rem 0 1.7rem; color: var(--release-muted); font-size: .9375rem; line-height: 1.7; }
 .spotlight__actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem 1.5rem; }
 .spotlight__listen { display: inline-flex; align-items: center; justify-content: center; gap: .75rem; min-height: 52px; padding: .9rem 1.2rem; background: var(--hot); color: var(--ink); font-size: .875rem; font-weight: 700; line-height: 1.5; letter-spacing: .04em; }
 .spotlight__listen:hover { background: var(--paper); }
@@ -70,10 +70,10 @@
 @media (max-width: 760px) {
   .topbar { grid-template-columns: auto minmax(0, 1fr); gap: 1rem; }
   .topbar .sequence { display: none; }
-  .feature-nav { justify-content: flex-end; gap: .5rem 1rem; font-size: .875rem; letter-spacing: 0; }
+  .feature-nav { justify-content: flex-end; gap: .5rem 1rem; letter-spacing: 0; }
   .spotlight { padding: 1.8rem calc(var(--pad) + .8rem) 2.5rem; }
   .spotlight__layout { grid-template-columns: 1fr; gap: 1.8rem; margin-top: 1.8rem; }
   .spotlight__artwork { max-width: 430px; margin-inline: auto; }
-  .spotlight h2 { font-size: clamp(2rem, 9vw, 4rem); }
+  .spotlight h2 { font-size: clamp(1.7rem, 7.5vw, 3.4rem); }
   .spotlight__description { max-width: 44ch; }
 }

@@ -4,9 +4,7 @@ A dependency-free, mobile-first artist homepage. It is ready to publish as a Git
 
 ## Featured release
 
-The first viewport temporarily spotlights **I Really Want to Stay at Your House (Atherian Schranz Edit) [FREE DL]**, released November 18, 2026. Its official SoundCloud artwork is stored at `assets/stay-at-your-house-schanz-edit.jpg`, and both the artwork and primary button link to the supplied SoundCloud share URL.
-
-The following EP section showcases the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
+The homepage opens with the upcoming **Break Point EP — Atherian / Kube Records (KUBE157)**, arriving November 27, 2026. The supplied official cover lives at `assets/break-point-official-artwork.png`; `releases.css` preserves intermittent displaced image slices, title cuts, and a scan sweep. The release effects can be paused and respect reduced-motion preferences.
 
 Before release, the spotlight presents one focused pre-order destination:
 
@@ -18,7 +16,7 @@ To feature a future release, update the section’s title, artist, label, artwor
 
 ## Latest set
 
-The homepage hierarchy is Animate EP, latest guest set, artist introduction, then the existing player and channels. The top navigation links directly to the EP, latest set, and channels. The `#latest-set` anchor also provides a direct social promotion destination: `https://atherian.io/#latest-set`.
+The featured EP appears above the latest guest set. The top navigation links directly to the EP, the latest set, and the shared Free Signal box for the Beautiful and I Really Want to Stay at Your House edits. The `#latest-set` anchor also provides a direct social promotion destination: `https://atherian.io/#latest-set`.
 
 The guest set is **SOSNYC Podcast 004: Atherian**, a one-hour Sounds of Schranz NYC set published October 6, 2026. Its official artwork is stored unmodified at `assets/sosnyc-podcast-004.jpg`; layout and mobile styles are in `spotlight.css`.
 

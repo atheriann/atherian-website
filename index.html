@@ -88,14 +88,13 @@
 
     <title>Atherian | Manhattan Schranz &amp; Techno Producer</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="flash-release.css" />
     <link rel="stylesheet" href="releases.css" />
     <link rel="stylesheet" href="spotlight.css" />
     <script src="script.js" defer></script>
     <script src="releases.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#new-release">Skip to newest release</a>
+    <a class="skip-link" href="#latest-release">Skip to featured release</a>
     <div class="glitch-field" id="glitch-field" aria-hidden="true"></div>
 
     <div class="machine-frame" aria-hidden="true">
@@ -109,37 +108,14 @@
         <span>A</span><span>7</span>
       </a>
       <nav class="feature-nav" aria-label="Featured music">
-        <a href="#new-release">OUT NOW</a>
         <a href="#latest-release">EP</a>
         <a href="#latest-set">MIX</a>
+        <a href="#free-edits">FREE EDITS</a>
       </nav>
       <p class="sequence" aria-label="Sequence 777">SEQ.777</p>
     </header>
 
     <main id="top">
-      <section class="flash-release" id="new-release" aria-labelledby="flash-release-title">
-        <div class="flash-release__topline">
-          <p><span aria-hidden="true"></span> JUST RELEASED / TODAY</p>
-          <time datetime="2026-11-18">18 NOV 2026</time>
-        </div>
-        <div class="flash-release__layout">
-          <div class="flash-release__copy">
-            <p class="flash-release__eyebrow">ATHERIAN <span aria-hidden="true">//</span> FREE DOWNLOAD</p>
-            <h2 id="flash-release-title">I REALLY WANT TO<br /><span>STAY AT YOUR HOUSE</span></h2>
-            <p class="flash-release__version">ATHERIAN SCHRANZ EDIT</p>
-            <p class="flash-release__description">Rosa Walton &amp; Hallie Coggins reworked into a full-impact Atherian Schranz transmission.</p>
-            <a class="flash-release__listen" href="https://on.soundcloud.com/nVyVuU4O1wdeqd1dmw" target="_blank" rel="noopener noreferrer" aria-label="Listen to I Really Want to Stay at Your House, Atherian Schranz Edit, on SoundCloud (opens in a new tab)">
-              <span aria-hidden="true">▶</span> LISTEN ON SOUNDCLOUD
-            </a>
-            <p class="flash-release__status">SIGNAL LIVE <span aria-hidden="true">/</span> STREAM + FREE DL <span aria-hidden="true">/</span> 777</p>
-          </div>
-          <a class="flash-release__artwork" href="https://on.soundcloud.com/nVyVuU4O1wdeqd1dmw" target="_blank" rel="noopener noreferrer" aria-label="Open the new Atherian Schranz edit on SoundCloud (opens in a new tab)">
-            <img src="assets/stay-at-your-house-schanz-edit.jpg" width="500" height="500" alt="Official artwork for I Really Want to Stay at Your House, Atherian Schranz Edit." fetchpriority="high" decoding="async" />
-            <span aria-hidden="true">NEW SIGNAL / 18.11.26</span>
-          </a>
-        </div>
-      </section>
-
       <section class="release" id="latest-release" aria-labelledby="release-title">
         <div class="release__topline">
           <p><span class="release__dot" aria-hidden="true"></span> NEXT TRANSMISSION</p>
@@ -162,7 +138,7 @@
 
           <figure class="release__artwork">
             <div class="release__art-frame">
-              <img class="release__cover" src="assets/break-point-official-artwork.png" width="1400" height="1400" alt="Official Break Point artwork by Atherian on Kube Records, showing a mirrored industrial lift shaft with orange-lit capsules." loading="lazy" decoding="async" />
+              <img class="release__cover" src="assets/break-point-official-artwork.png" width="1400" height="1400" alt="Official Break Point artwork by Atherian on Kube Records, showing a mirrored industrial lift shaft with orange-lit capsules." fetchpriority="high" decoding="async" />
               <span class="release__slice release__slice--one" aria-hidden="true"></span>
               <span class="release__slice release__slice--two" aria-hidden="true"></span>
               <span class="release__slice release__slice--three" aria-hidden="true"></span>
@@ -396,29 +372,33 @@
         </p>
       </section>
 
-      <section class="partner partner--free" aria-labelledby="free-title">
+      <section class="partner partner--free" id="free-edits" aria-labelledby="free-title">
         <div class="section-heading section-heading--compact partner__heading">
           <p class="section-kicker">03 / OPEN ARCHIVE</p>
           <h2 id="free-title">FREE SIGNAL</h2>
         </div>
 
-        <a
-          class="partner-card partner-card--free"
-          href="https://hypeddit.com/atherian/beautifulschranz"
-          data-channel="freeDownload"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Download Beautiful Schranz by Atherian for free on Hypeddit"
-        >
-          <span class="partner-card__index">PUBLIC NODE / 003</span>
-          <span class="partner-card__brand partner-card__brand--release">BEAUTIFUL <b>SCHRANZ</b></span>
-          <span class="partner-card__category">FREE DOWNLOAD / HYPEDDIT</span>
-          <span class="partner-card__offer">
-            <strong>CLAIM THE TRANSMISSION</strong>
-          </span>
-          <span class="partner-card__action" aria-hidden="true">UNLOCK / ↗</span>
-          <span class="partner-card__gear" aria-hidden="true">3</span>
-        </a>
+        <ul class="free-edits" aria-label="Atherian Schranz edits">
+          <li class="free-edits__row">
+            <div>
+              <h3>Beautiful</h3>
+              <p>Anyma &amp; Joji · Atherian Schranz Edit</p>
+            </div>
+            <div class="free-edits__links">
+              <a href="https://hypeddit.com/atherian/beautifulschranz" data-channel="freeDownload" target="_blank" rel="noopener noreferrer" aria-label="Download Beautiful for free on Hypeddit">FREE DOWNLOAD</a>
+            </div>
+          </li>
+          <li class="free-edits__row">
+            <div>
+              <h3>I Really Want to Stay at Your House</h3>
+              <p>Rosa Walton &amp; Hallie Coggins · Atherian Schranz Edit</p>
+            </div>
+            <div class="free-edits__links">
+              <a href="https://on.soundcloud.com/nVyVuU4O1wdeqd1dmw" target="_blank" rel="noopener noreferrer" aria-label="Listen to I Really Want to Stay at Your House on SoundCloud">SOUNDCLOUD</a>
+              <a href="https://hypeddit.com/atherian/stay-at-your-house" target="_blank" rel="noopener noreferrer" aria-label="Download I Really Want to Stay at Your House for free on Hypeddit">FREE DOWNLOAD</a>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="secondary" aria-labelledby="secondary-title">

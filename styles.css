@@ -34,6 +34,7 @@ body {
   color: var(--paper);
   background: var(--ink);
   font-family: var(--mono);
+  font-size: .9375rem;
   text-rendering: optimizeLegibility;
 }
 
@@ -457,7 +458,7 @@ a {
   justify-content: flex-start;
   margin: 0 -0.02em 0 -0.03em;
   font-family: var(--display);
-  font-size: clamp(3.15rem, 16.8vw, 15.6rem);
+  font-size: clamp(2.75rem, 13.8vw, 13rem);
   font-weight: 900;
   font-stretch: condensed;
   line-height: 0.72;
@@ -510,7 +511,7 @@ a {
 .manifesto {
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(1.05rem, 2.2vw, 1.8rem);
+  font-size: clamp(1rem, 1.85vw, 1.55rem);
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.08;
@@ -592,7 +593,7 @@ a {
   max-width: 12ch;
   margin: 0.9rem 0 1.5rem;
   font-family: var(--title);
-  font-size: clamp(2.1rem, 5.2vw, 5.4rem);
+  font-size: clamp(1.85rem, 4.35vw, 4.6rem);
   font-weight: 500;
   line-height: 0.88;
   letter-spacing: -0.045em;
@@ -679,7 +680,7 @@ a {
 .player-identity h3 {
   margin: 0;
   font-family: var(--title);
-  font-size: clamp(3.2rem, 11vw, 10rem);
+  font-size: clamp(2.6rem, 8.8vw, 8rem);
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 0.82;
@@ -888,7 +889,7 @@ a {
   position: relative;
   z-index: 2;
   font-family: var(--display);
-  font-size: clamp(4.1rem, 13vw, 13rem);
+  font-size: clamp(3.4rem, 10.5vw, 10.5rem);
   font-weight: 900;
   letter-spacing: -0.085em;
   line-height: 0.7;
@@ -953,34 +954,50 @@ a {
   background: rgba(255, 255, 255, 0.012);
 }
 
-.partner-card--free {
-  color: var(--paper);
+.free-edits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background: var(--ink);
   border: 1px solid rgba(255, 196, 0, 0.34);
 }
 
-.partner-card--free::before {
-  border-color: rgba(255, 196, 0, 0.32);
-  box-shadow:
-    inset 0 0 0 6vw var(--ink),
-    inset 0 0 0 calc(6vw + 1px) rgba(255, 196, 0, 0.24),
-    inset 0 0 0 12vw var(--ink),
-    inset 0 0 0 calc(12vw + 1px) rgba(255, 196, 0, 0.14);
+.free-edits__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .85rem 2rem;
+  padding: clamp(.9rem, 2vw, 1.5rem);
 }
 
-.partner-card--free::after {
-  background: var(--hot);
-  box-shadow: 0 0 0 0.5rem var(--ink), 0 0 0 calc(0.5rem + 1px) rgba(255, 196, 0, 0.34);
+.free-edits__row + .free-edits__row { border-top: 1px solid var(--line); }
+.free-edits__row h3 {
+  margin: 0;
+  font-family: var(--title);
+  font-size: clamp(1.1rem, 2.5vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.25;
 }
-
-.partner-card--free .partner-card__category { color: var(--hot); }
-.partner-card--free .partner-card__offer strong { color: var(--ink); background: var(--hot); }
-.partner-card--free .partner-card__gear { color: rgba(255, 196, 0, 0.08); }
-
-.partner-card__brand--release {
-  font-size: clamp(3.2rem, 9.8vw, 9.8rem);
-  letter-spacing: -0.065em;
+.free-edits__row p {
+  margin: .3rem 0 0;
+  color: var(--release-muted);
+  font-size: .8125rem;
+  line-height: 1.5;
 }
+.free-edits__links { display: flex; flex-wrap: wrap; gap: .5rem; }
+.free-edits__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .5rem .75rem;
+  border: 1px solid var(--line-strong);
+  color: var(--hot);
+  font-size: .8125rem;
+  line-height: 1.35;
+}
+.free-edits__links a:hover { border-color: var(--hot); }
+.free-edits__links a:focus-visible { outline: 2px solid var(--hot); outline-offset: 3px; }
 
 .affiliate-note {
   margin: 1rem 0 0;
@@ -1009,7 +1026,7 @@ a {
 .section-heading h2 {
   margin: 0;
   font-family: var(--title);
-  font-size: clamp(3.2rem, 10vw, 9rem);
+  font-size: clamp(2.65rem, 8vw, 7.25rem);
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 0.82;
@@ -1076,7 +1093,7 @@ a {
 
 .channel__name {
   font-family: var(--display);
-  font-size: clamp(1.7rem, 4vw, 3.7rem);
+  font-size: clamp(1.45rem, 3.2vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.045em;
   transition: transform 380ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms ease;
@@ -1125,7 +1142,7 @@ a {
 .section-heading--compact .section-kicker { margin-bottom: 1rem; }
 
 .section-heading--compact h2 {
-  font-size: clamp(2.8rem, 7vw, 6rem);
+  font-size: clamp(2.3rem, 5.6vw, 4.8rem);
 }
 
 .secondary__grid {
@@ -1144,7 +1161,7 @@ a {
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-family: var(--display);
-  font-size: clamp(1.05rem, 2.4vw, 1.7rem);
+  font-size: clamp(1rem, 1.95vw, 1.45rem);
   font-weight: 700;
   transition: color 220ms ease, background 220ms ease;
 }
@@ -1334,7 +1351,7 @@ a {
   .eyebrow { margin-bottom: 0.85rem; }
   .wordmark {
     gap: 0.035em;
-    font-size: clamp(2.6rem, 15.8vw, 6.8rem);
+    font-size: clamp(2.2rem, 13.25vw, 5.8rem);
     letter-spacing: 0;
   }
   .impact-line { margin-top: 2.1rem; }
@@ -1393,7 +1410,7 @@ a {
   }
 
   .channel__number { grid-area: number; }
-  .channel__name { grid-area: name; font-size: clamp(1.5rem, 8vw, 2.2rem); }
+  .channel__name { grid-area: name; font-size: clamp(1.3rem, 6.6vw, 1.85rem); }
   .channel__meta { grid-area: meta; }
   .channel__action { grid-area: action; }
   .channel::after { right: 2.4rem; font-size: 5rem; }
@@ -1422,12 +1439,8 @@ a {
   .partner-card__category { text-align: left; }
   .partner-card__brand {
     align-self: center;
-    font-size: clamp(3.2rem, 17vw, 6rem);
+    font-size: clamp(2.65rem, 14vw, 5rem);
     white-space: normal;
-  }
-  .partner-card__brand--release {
-    font-size: clamp(2.8rem, 14.8vw, 5.4rem);
-    line-height: 0.76;
   }
   .partner-card__offer { align-items: flex-start; flex-direction: column; }
   .partner-card__action { justify-self: start; padding: 0; }

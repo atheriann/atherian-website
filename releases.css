@@ -56,7 +56,7 @@
   margin: 0 0 2rem -.045em;
   font-family: var(--display);
   font-weight: 900;
-  font-size: clamp(3rem, 7.5vw, 8.5rem);
+  font-size: clamp(2.6rem, 6.25vw, 7rem);
   line-height: .9;
   letter-spacing: -.065em;
   transform: skewX(-6deg);
@@ -73,7 +73,7 @@
 }
 .release__title::before { clip-path: inset(19% 0 58%); }
 .release__title::after { clip-path: inset(63% 0 13%); animation-delay: .16s; color: #fff; }
-.release__announcement { margin: 0; font-size: clamp(1rem, 1.45vw, 1.25rem); line-height: 1.6; letter-spacing: .055em; color: var(--release-gold); }
+.release__announcement { margin: 0; font-size: clamp(.9375rem, 1.25vw, 1.075rem); line-height: 1.6; letter-spacing: .055em; color: var(--release-gold); }
 .release__announcement strong { font-weight: 500; white-space: nowrap; }
 .release__platforms { margin: .6rem 0 1.8rem; color: var(--release-muted); font-size: .875rem; letter-spacing: .06em; line-height: 1.7; }
 .release__destinations { display: grid; max-width: 30rem; border-top: 1px solid var(--line-strong); }
@@ -138,9 +138,9 @@
   .release__layout { grid-template-columns: 1fr; gap: 2rem; padding-block: 1.8rem; }
   .release__copy { display: contents; }
   .release__artist { grid-row: 1; margin: 0; font-size: .875rem; }
-  .release__title { grid-row: 2; margin: -1rem 0 -.5rem -.03em; font-size: clamp(2.65rem, 13vw, 6rem); }
+  .release__title { grid-row: 2; margin: -1rem 0 -.5rem -.03em; font-size: clamp(2.25rem, 10.75vw, 5rem); }
   .release__artwork { grid-row: 5; max-width: 430px; }
-  .release__announcement { grid-row: 3; margin-top: -.3rem; font-size: 1rem; }
+  .release__announcement { grid-row: 3; margin-top: -.3rem; }
   .release__platforms { grid-row: 4; margin: -1.5rem 0 -.3rem; font-size: .875rem; }
   .release__destinations { grid-row: 6; width: 100%; max-width: none; margin-top: -.5rem; }
   .release__destination { min-height: 3.5rem; padding-inline: .35rem; }
